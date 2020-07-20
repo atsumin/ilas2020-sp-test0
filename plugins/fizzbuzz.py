@@ -9,7 +9,7 @@ def fizzbuzz(num):
         return 'Fizz'
     return 'Nothing'
 
-@respond_to(r'^fizzbuzz\s+(\d+)')
+@respond_to(r'^fizzbuzz\s+(\d+)$')
 def respond_fizzbuzz(message, digitstr):
     fb = fizzbuzz(int(digitstr))
-    message.reply(f'fizzbuzz {digitstr} {fb}')
+    message.reply(f'{digitstr}: {fb}')

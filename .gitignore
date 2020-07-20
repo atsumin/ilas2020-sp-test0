@@ -3,5 +3,7 @@
 *.sh
 *.bat
 *.exe
+*.db
 .DS_Store
 __pycache__
+.vscode

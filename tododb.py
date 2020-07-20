@@ -243,4 +243,5 @@ class DB(object):
                 matched.append(dict)
         return matched
 
-
+   def test(self):
+      print('hello')
